@@ -1,0 +1,70 @@
+{
+  "name": "feathers-nuxt",
+  "description": "A simple Feathers + Nuxt application",
+  "version": "0.0.0",
+  "homepage": "",
+  "main": "src",
+  "keywords": [
+    "feathers"
+  ],
+  "nuxt": {
+    "host": "0.0.0.0",
+    "port": "3030"
+  },
+  "author": {
+    "name": "Silvestre Herrera",
+    "email": "silvestre.herrera@gmail.com"
+  },
+  "contributors": [],
+  "bugs": {},
+  "directories": {
+    "lib": "src"
+  },
+  "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "scripts": {
+    "test": "npm run eslint && npm run mocha",
+    "eslint": "eslint src/. test/. --config .eslintrc.json",
+    "build": "nuxt build",
+    "dev": "DEBUG=nuxt:* nodemon --watch src/ --watch config/ src/index.js",
+    "prestart": "npm run build",
+    "start": "NODE_ENV=production node src/",
+    "mocha": "mocha test/ --recursive"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "compression": "^1.6.2",
+    "cors": "^2.8.3",
+    "feathers": "^2.1.1",
+    "feathers-authentication": "^1.2.0",
+    "feathers-authentication-jwt": "^0.3.1",
+    "feathers-authentication-local": "^0.3.4",
+    "feathers-configuration": "^0.4.1",
+    "feathers-errors": "^2.6.2",
+    "feathers-hooks": "^1.8.1",
+    "feathers-hooks-common": "^2.0.3",
+    "feathers-rest": "^1.7.1",
+    "feathers-sequelize": "^1.4.5",
+    "feathers-socketio": "^1.5.2",
+    "feathers-vuex": "^0.2.2",
+    "helmet": "^3.5.0",
+    "nuxt": "^0.10.5",
+    "pg": "^6.1.5",
+    "sequelize": "^3.30.4",
+    "serve-favicon": "^2.4.2",
+    "socket.io-client": "^1.7.3",
+    "winston": "^2.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-html": "^2.0.1",
+    "eslint-plugin-import": "^2.2.0",
+    "mocha": "^3.2.0",
+    "nodemon": "^1.11.0",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.0"
+  }
+}
