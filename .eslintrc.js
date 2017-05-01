@@ -20,6 +20,7 @@ module.exports = {
               '~': resolve(__dirname, 'client'),
               '~assets': resolve(__dirname, 'client/assets'),
               '~components': resolve(__dirname, 'client/components'),
+              '~feathers': resolve(__dirname, 'client/feathers'),
               '~mixins': resolve(__dirname, 'client/mixins'),
               '~pages': resolve(__dirname, 'client/pages'),
               '~plugins': resolve(__dirname, 'client/plugins'),

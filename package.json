@@ -52,11 +52,13 @@
     "feathers-socketio": "^1.5.2",
     "feathers-vuex": "^0.4.0",
     "helmet": "^3.5.0",
+    "jwt-decode": "^2.2.0",
     "nuxt": "^0.10.5",
     "pg": "^6.1.5",
     "sequelize": "^3.30.4",
     "serve-favicon": "^2.4.2",
     "socket.io-client": "^1.7.3",
+    "vue": "2.2.6",
     "vue-meta": "0.5.5",
     "winston": "^2.3.1"
   },

@@ -1,9 +1,6 @@
 <template>
-  <div>
+  <div class="home">
     <h1>Home</h1>
-    <ul>
-      <li><nuxt-link to="/about">About</nuxt-link></li>
-      <li><nuxt-link to="/admin">Sign in</nuxt-link></li>
-    </ul>
+    <p>This is the home page. You can try going to <nuxt-link to="/admin">Admin page</nuxt-link> but it'll redirect you to the Sign In page unless you're authenticated.</p>
   </div>
 </template>
