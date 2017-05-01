@@ -6,8 +6,8 @@
 </template>
 
 <script>
+import mainMenu from '~components/main-menu.vue';
 import '~feathers';
-import mainMenu from '~components/main-menu';
 
 export default {
   name: 'default-layout',

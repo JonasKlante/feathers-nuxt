@@ -52,16 +52,17 @@ export default {
         const authenticated = await this.authenticate({ strategy: 'local', email, password });
 
         if (authenticated) {
+          this.error = null;
           this.$router.push('/admin');
         }
       } catch (error) {
-        switch (error.className) {
-          case 'not-authenticated': {
+        switch (error.message) {
+          case 'Error': {
             this.error = 'Wrong credentials!';
             break;
           }
           default: {
-            this.error = 'Unkown error';
+            this.error = error.message;
           }
         }
 
@@ -74,8 +75,7 @@ export default {
       const password = this.password;
 
       try {
-        const newUser = await this.createUser({ email, password });
-        if (newUser) this.signIn();
+        await this.createUser({ email, password });
       } catch (error) {
         throw error;
       }

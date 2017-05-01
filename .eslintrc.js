@@ -7,10 +7,7 @@ module.exports = {
     mocha: true
   },
   extends: 'airbnb/base',
-  plugins: [
-    'html',
-    'import'
-  ],
+  plugins: ['html'],
   settings: {
     'import/resolver': {
       webpack: {
@@ -31,5 +28,11 @@ module.exports = {
         },
       },
     },
+  },
+  rules: {
+    'import/extensions': ['error', 'always', {
+      'js': 'never',
+      'vue': 'never',
+    }],
   },
 };
