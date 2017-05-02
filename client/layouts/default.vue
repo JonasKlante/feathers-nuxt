@@ -7,7 +7,6 @@
 
 <script>
 import mainMenu from '~components/main-menu.vue';
-import '~feathers';
 
 export default {
   name: 'default-layout',
