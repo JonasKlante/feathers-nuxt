@@ -9,7 +9,10 @@ module.exports = {
   dev: process.env.NODE_ENV !== 'production',
   build: {
     extend(config) {
-      const aliases = Object.assign(config.resolve.alias, { '~feathers': path.resolve(__dirname, 'client/feathers') });
+      const aliases = Object.assign(config.resolve.alias, {
+        '~helpers': path.resolve(__dirname, 'client/helpers'),
+        '~feathers': path.resolve(__dirname, 'client/feathers'),
+      });
       config.resolve.alias = aliases; // eslint-disable-line no-param-reassign
     },
   },
