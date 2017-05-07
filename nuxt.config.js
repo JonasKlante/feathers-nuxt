@@ -10,8 +10,8 @@ module.exports = {
   build: {
     extend(config) {
       const aliases = Object.assign(config.resolve.alias, {
-        '~helpers': path.resolve(__dirname, 'client/helpers'),
         '~feathers': path.resolve(__dirname, 'client/feathers'),
+        '~utils': path.resolve(__dirname, 'client/utils'),
       });
       config.resolve.alias = aliases; // eslint-disable-line no-param-reassign
     },

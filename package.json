@@ -36,7 +36,6 @@
   "dependencies": {
     "body-parser": "^1.17.1",
     "compression": "^1.6.2",
-    "cookie-storage": "^2.0.2",
     "cors": "^2.8.3",
     "feathers": "^2.1.1",
     "feathers-authentication": "^1.2.0",
@@ -52,6 +51,8 @@
     "feathers-socketio": "^1.5.2",
     "feathers-vuex": "^0.4.0",
     "helmet": "^3.5.0",
+    "js-cookie": "^2.1.4",
+    "jwt-decode": "^2.2.0",
     "nuxt": "^0.10.5",
     "pg": "^6.1.5",
     "sequelize": "^3.30.4",
