@@ -12,5 +12,9 @@ export default {
   name: 'default-layout',
 
   components: { mainMenu },
+
+  mounted() {
+    this.$store.dispatch('auth/authenticate');
+  },
 };
 </script>

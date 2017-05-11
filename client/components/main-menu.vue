@@ -2,9 +2,9 @@
   <ul class="main-menu">
     <li class="main-menu__item"><nuxt-link to="/" exact>Home</nuxt-link></li>
     <li class="main-menu__item"><nuxt-link to="/about">About</nuxt-link></li>
-    <li class="main-menu__item" v-if="isAuthenticated"><nuxt-link to="/admin">Admin</nuxt-link></li>
-    <li class="main-menu__item" v-if="isAuthenticated"><a href="#" @click.prevent="exit">Sign out</a></li>
-    <li class="main-menu__item" v-else><nuxt-link to="/sign-in">Sign in</nuxt-link></li>
+    <li class="main-menu__item"><nuxt-link to="/admin">Admin</nuxt-link></li>
+    <li class="main-menu__item"><a href="#" @click.prevent="exit">Sign out</a></li>
+    <li class="main-menu__item"><nuxt-link to="/sign-in">Sign in</nuxt-link></li>
   </ul>
 </template>
 

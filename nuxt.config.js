@@ -1,12 +1,8 @@
 const path = require('path');
 
 module.exports = {
-  loading: {
-    color: '#92D3CE',
-  },
-  router: {
-    middleware: 'do-auth',
-  },
+  loading: { color: '#92D3CE' },
+  router: { middleware: 'do-auth' },
   rootDir: path.resolve(__dirname),
   srcDir: path.resolve(__dirname, 'client'),
   dev: process.env.NODE_ENV !== 'production',
@@ -19,5 +15,13 @@ module.exports = {
       });
       config.resolve.alias = aliases; // eslint-disable-line no-param-reassign
     },
+
+    vendor: [
+      'feathers/client',
+      'feathers-socketio/client',
+      'socket.io-client',
+      'feathers-hooks',
+      'feathers-authentication-client',
+    ],
   },
 };
