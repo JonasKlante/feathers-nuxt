@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import { mapActions } from 'vuex';
+import { mapActions } from 'vuex'; // eslint-disable-line import/no-extraneous-dependencies
 
 export default {
   name: 'authentication',

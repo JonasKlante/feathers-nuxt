@@ -8,6 +8,6 @@
 <script>
 export default {
   name: 'protected',
-  middleware: 'auth',
+  middleware: 'check-auth',
 };
 </script>

@@ -4,19 +4,19 @@
     <li class="main-menu__item"><nuxt-link to="/about">About</nuxt-link></li>
     <li class="main-menu__item" v-if="isAuthenticated"><nuxt-link to="/admin">Admin</nuxt-link></li>
     <li class="main-menu__item" v-if="isAuthenticated"><a href="#" @click.prevent="exit">Sign out</a></li>
-    <li class="main-menu__item" v-else><nuxt-link to="/admin/sign-in">Sign in</nuxt-link></li>
+    <li class="main-menu__item" v-else><nuxt-link to="/sign-in">Sign in</nuxt-link></li>
   </ul>
 </template>
 
 <script>
-import { mapActions, mapState } from 'vuex';
+import { mapActions, mapState } from 'vuex'; // eslint-disable-line import/no-extraneous-dependencies
 
 export default {
   computed: {
-    ...mapState('auth', ['accessToken']),
+    ...mapState('auth', ['user']), // Not mapping ¯\_(ツ)_/¯
 
     isAuthenticated() {
-      return !!this.accessToken;
+      return !!this.user;
     },
   },
 
