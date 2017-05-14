@@ -2,7 +2,6 @@ const path = require('path');
 
 module.exports = {
   loading: { color: '#92D3CE' },
-  router: { middleware: 'do-auth' },
   rootDir: path.resolve(__dirname),
   srcDir: path.resolve(__dirname, 'client'),
   dev: process.env.NODE_ENV !== 'production',

@@ -13,7 +13,7 @@ import { mapActions, mapState } from 'vuex'; // eslint-disable-line import/no-ex
 
 export default {
   computed: {
-    ...mapState('auth', ['user']), // Not mapping ¯\_(ツ)_/¯
+    ...mapState('auth', ['user']), // Not updating after login ¯\_(ツ)_/¯
 
     isAuthenticated() {
       return !!this.user;
