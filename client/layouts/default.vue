@@ -24,7 +24,7 @@ export default {
     }),
   },
 
-  mounted() {
+  created() {
     if (this.user) this.authenticate();
   },
 };
